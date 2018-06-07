@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="451815931731-u24ino5uecga1arf65814fd72201fcmu.apps.googleusercontent.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="../css/loading.css">
-	 <script  language="JavaScript" type="text/javascript" src="../js/main.js"></script>
+	<script  language="JavaScript" type="text/javascript" src="../js/main.js"></script>
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	
+	
 </head>
 
 <body onload="myFunction()" style="margin:0;">
@@ -24,10 +30,32 @@
 				
 			</form>
 			<p>Pas encore de compte chez nous ?<a href="inscription.html"> Inscrivez-vous.</a> </p>
-		</div>
 		
+		<center>  
+		<div class="g-signin2" data-onsuccess="onSignIn"></div>
+	  </center>
+		</div>
+			
+	  
 	</div>
 	
+  <script>
+    function takeBack(){
+    	  window.location.replace("connexion.html");
+
+    }
+    
+    function onSignIn(googleUser) {
+      var profile = googleUser.getBasicProfile();
+      console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+      console.log('Name: ' + profile.getName());
+      console.log('Image URL: ' + profile.getImageUrl());
+      console.log('Email: ' + profile.getEmail());
+	  window.location.replace("menu.html");
+
+	
+    }
+  </script>
 </body>
 
 </html>

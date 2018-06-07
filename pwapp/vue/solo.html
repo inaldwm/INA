@@ -6,8 +6,9 @@
 	 <link rel="stylesheet" href="../css/loading.css">
 	 <script src="https://d3js.org/d3.v4.min.js"></script>
    <script  language="JavaScript" type="text/javascript" src="../js/main.js"></script>
-    
- <style>
+   
+	<style>
+ 
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
@@ -101,16 +102,21 @@ function showPage() {
 			console.log(thematique);
 			
 			var myArticle = document.createElement('article');
+		
 			var myPara1 = document.createElement('a');
+			var myPara2 = document.createElement('a');
+			myPara1.setAttribute('href', "maps.php?idTheme="+thematique[i].idTheme);
+			myPara2.setAttribute('href', "pins.php?idTheme="+thematique[i].idTheme);
 			var myList = document.createElement('ul');
 		  
-			myPara1.textContent = thematique[i].nom;;
-			
+			myPara1.textContent = thematique[i].nom;
+			 
 		  
 			myArticle.appendChild(myPara1);
 			myArticle.appendChild(myList);
 			section.appendChild(myArticle);
 		  }
+		     
     }
     </script>
 </body>

@@ -3,7 +3,19 @@
 <?php
 		try{
 			// On se connecte à MySQL
+			/*
+			
+$config = new Zend_Config_Ini('/application/public/application.ini', 'testing');
+
+$host= $config->database->params->host;  
+$username=$config->database->params->username; 
+$password= $config->database->params->password; 
+$database= $config->database->params->dbname; */
 			$bdd = new PDO('mysql:host=localhost;dbname=geo_quizz_bd;charset=utf8', 'root', 'root');
+		
+	
+
+		
 		}catch(Exception $e){
 			// En cas d'erreur, on affiche un message et on arrête tout
 			die('Erreur : ');
