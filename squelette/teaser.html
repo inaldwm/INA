@@ -1,0 +1,27 @@
+<BOUCLEordre_page4(RUBRIQUES){id_rubrique}>
+	<section id="promo">
+		<div class="container common">
+			<div class="row ">
+				<div class="header about_top">
+				<BOUCLE_art(ARTICLES){id_rubrique}>
+					<h2>#TITRE</h2>
+					<h4>05</h4>
+				      </BOUCLE_art>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-md-12 col-xs-12 video-watch">
+				<BOUCLEdoc(DOCUMENTS){id_document=2}>
+					<img src="#CHEMIN{images/Video.png}" alt="" class="img-responsive">
+					<div class="col-sm-12 youtube_video">
+						<a class="bla-1" href="#FICHIER">
+                        <img src="#CHEMIN{images/video_icon.png}" alt="" class="img-responsive">
+                    </a>
+				</BOUCLEdoc>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</BOUCLEordre_page4>
+	<!-- end of promo part -->

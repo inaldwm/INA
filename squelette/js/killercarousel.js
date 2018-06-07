@@ -1,13 +1,5 @@
 /*
-    Killer Carousel 1 Site License (KC01-01) TRIAL VERSION.
-    Version 1.2 rev 1501161200
-    Please purchase an appropriate license to use this software.
-    License Agreement: www.starplugins.com/license
-    Copyright (c)2012-2015 Star Plugins - www.starplugins.com
-    
-    Downloaded on Jul 26, 2016 by account #TRIAL USER
-    License Key: N/A
-    Licensed website(s): jnnahian.com
+ 
 */
 (new window['\x46\x75\x6E\x63\x74\x69\x6F\x6E'](['window.KillerCarouselItem=p;f(window).bind(\"blur\",function(){h.hasFocus=!1});f(window).bind(\"focus\",function(){h.hasFocus=!0});f.fn.KillerCarousel=function(a){return this.each(function(){f(this).data(\"KillerCarousel\",new h(f(this),a))})}})(jQuery);;',
 'd.createItem=d.Ia;d.appendItem=d.na;d.setCss3d=d.i;d.adjust3dYPos=d.X;d.adjust2dYPos=d.P;d.getNaturalWidth=d.Sa;d.getScale=d.Ta;d.calcOpacity=d.Q;d.getScrollPos=d.Ua;d.createNavButtons=d.ra;d.refreshSize=d.$a;d=p.prototype;d.getData=d.getData;d.setSize=d.hb;window.KillerCarousel=h;',

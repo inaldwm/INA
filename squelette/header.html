@@ -1,0 +1,79 @@
+<header id="home">
+
+		<nav class="navbar navbar-default nav-color">
+			<div class="container">
+			
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					
+					<a href="#URL_SITE_SPIP">
+                        <img src="#CHEMIN{images/logobanner.png}" class="img-responsive" alt="">
+                    </a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-right">
+					
+						<BOUCLEnom_rubrique(RUBRIQUES){racine}>
+
+							<li class="active"><a [href="#(#DESCRIPTIF|textebrut)"]>#TITRE</a></li>
+							
+						</BOUCLEnom_rubrique>
+					</ul>
+				
+				</div>
+				
+			</div>
+		</nav>
+		
+		<section id="banner" class="main_page-color">
+		
+			<div class="container banner_text">
+			
+				<div class="row">
+				<BOUCLErub_acceuil(ARTICLES){id_article=13}>
+				
+					<div class="col-md-12 col-sm-12" style="z-index:88888;">
+			
+						<h1><span>#TEXTE</span>#TITRE</h1>
+					</div>
+				      </BOUCLErub_acceuil>
+					<div class="col-md-12 col-sm-12 col-xs-12 round_border">
+						<img src="#CHEMIN{images/01_Home_Page.png}" class="img-responsive" alt="">
+					</div>
+					<div class="col-md-12 col-sm-12">
+
+						<div class="rotate_slider" id="container">
+							<ul>
+							<BOUCLE_doc(DOCUMENTS){id_article=13}>
+								<li class="rotate_img">
+									<img src="#FICHIER" class="img-responsive" alt="">
+								</li>
+								<li>
+									<img src="#FICHIER" class="img-responsive" alt="">
+								</li>
+								<li>
+									<img src="#FICHIER" class="img-responsive" alt="">
+							
+								</li>
+							</BOUCLE_doc>
+
+							</ul>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			<div class="shape_image">
+				<img src="#CHEMIN{images/banner-shape.png}" class="img-responsive" alt="">
+			</div>
+		
+		</section>
+		
+	</header>
+	

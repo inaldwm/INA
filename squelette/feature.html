@@ -1,0 +1,188 @@
+<BOUCLEordre_page3(RUBRIQUES){id_rubrique}>
+<section id="feature">
+
+		<div class="container common">
+			<div class="header about_top">
+			
+			<BOUCLE_sous_rubrique(RUBRIQUES){id_parent}>
+				<h2>#TITRE</h2>
+				<h4>04</h4>
+			</BOUCLE_sous_rubrique>
+			
+			</div>
+			
+			<div class="container">
+				<div class="row">
+				
+				<!--caractéristiques gauches-->
+					<div class="col-md-4 col-sm-4 col-xs-12">
+					
+						<div class="feater_left">
+						
+							<div class="row">
+							
+								<div class="col-sm-12 col-xs-12 feature_left feature_right-color feature_bg-color">
+									<ul class="">
+										<li>
+											
+											<div class="about-left feature_l feater_left_item feater_item1 text-right">
+											<BOUCLEcarac1(ARTICLES){id_article=17}>
+												<h3>#TITRE</h3>
+												<p>#TEXTE</p>
+											</BOUCLEcarac1>
+											</div>
+											
+										</li>
+										<li class="over1 over2 ">
+											<div class="over3"></div>
+											<div class="interest_col ">
+												<img src="#CHEMIN{images/features-icon-1w.png}" class="img-responsive bicycle" alt="bicycle">
+												<img src="#CHEMIN{images/Feature-Icon-01.png}" class="img-responsive bicycle-ylw" alt="bicycle">
+											</div>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="col-sm-12 col-xs-12 feature_left feature_right-color feature_bg-color">
+									<ul class="mid-feature">
+										
+										<li>
+										<BOUCLEcarac2(ARTICLES){id_article=25}>
+											<div class="about-left2 feature_l feater_left_item text-right">
+												<h3>#TITRE</h3>
+												<p>#TEXTE<p>
+											</div>
+										</BOUCLEcarac2>
+										</li>
+										
+										<li class="over1 over2 ">
+											<div class="over3"></div>
+											<div class="interest_col ">
+												<img src="#CHEMIN{images/features-icon-2w.png}" class="img-responsive bicycle cloud-w" alt="bicycle">
+												<img src="#CHEMIN{images/Feature-Icon-02.png}" class="img-responsive bicycle-ylw cloud-ylw" alt="bicycle">
+
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="col-sm-12 col-xs-12 feature_left feature_right-color feature_bg-color">
+									<ul class="">
+										
+										<li>
+										<BOUCLEcarac3(ARTICLES){id_article=26}>
+											<div class="about-left3 feature_l feater_left_item feater_item1 text-right">
+												<h3>#TITRE</h3>
+												<p>#TEXTE</p>
+											</div>
+										</BOUCLEcarac3>
+										</li>
+										
+										<li class="over1 over2 ">
+											<div class="over3"></div>
+											<div class="interest_col ">
+												<img src="#CHEMIN{images/features-icon-3w.png}" class="img-responsive bicycle mouse_over" alt="bicycle">
+												<img src="#CHEMIN{images/Feature-Icon-03.png}" class="img-responsive bicycle-ylw mouse" alt="bicycle">
+											</div>
+										</li>
+									</ul>
+								</div>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+					<BOUCLE_doc(DOCUMENTS){id_rubrique}>
+						<div class="feater_img">
+							<img class="img-responsive" src="#FICHIER" alt="">
+						</div>
+					</BOUCLE_doc>
+					</div>
+					
+					<!--caractéristiques droites-->
+					
+					<div class="col-md-4 col-sm-4 col-xs-12 col-xs-12">
+					
+						<div class="feater_right">
+						
+							<div class="row">
+							
+								<div class="col-sm-12 col-xs-12 feature_right feature_right-color feature_bg-color">
+									<ul class="">
+										<li class="over1-r over2">
+											<div class="over3"></div>
+											<div class="interest_col">
+												<img src="#CHEMIN{images/features-icon-4w.png}" class="img-responsive bicycle code_over" alt="bicycle">
+												<img src="#CHEMIN{images/Feature-Icon-04.png}" class="img-responsive bicycle-ylw code" alt="bicycle">
+											</div>
+										</li>
+										<li>
+											<BOUCLEcarac4(ARTICLES){id_article=27}>
+											<div class="about-right feater_right_item feater_item4 text-left">
+												<h3>#TITRE</h3>
+												<p>#TEXTE</p>
+											</div>
+											</BOUCLEcarac4>
+										</li>
+
+									</ul>
+								</div>
+								
+								<div class="col-sm-12 col-xs-12 feature_right feature_right-color feature_bg-color">
+									<ul class="mid-feature-right">
+										<li class="over1-r over2">
+											<div class="over3"></div>
+											<div class="interest_col ">
+												<img src="#CHEMIN{images/features-icon-5w.png}" class="img-responsive bicycle bulb_over" alt="bicycle">
+												<img src="#CHEMIN{images/Feature-Icon-05.png}" class="img-responsive bicycle-ylw bulb" alt="bicycle">
+
+											</div>
+										</li>
+										<li>
+										<BOUCLEcarac5(ARTICLES){id_article=28}>
+											<div class="about-right2 feater_right_item feater_item3 text-left">
+												<h3>#TITRE</h3>
+												<p>#TEXTE</p>
+											</div>
+										</BOUCLEcarac5>
+										</li>
+
+									</ul>
+								</div>
+								<div class="col-sm-12 col-xs-12 feature_right feature_right-color feature_bg-color">
+									<ul class="">
+										<li class="over1-r over2">
+											<div class="over3"></div>
+											<div class="interest_col ">
+												<img src="#CHEMIN{images/features-icon-6w.png}" class="img-responsive bicycle lock_over" alt="bicycle">
+												<img src="#CHEMIN{images/Feature-Icon-06.png}" class="img-responsive bicycle-ylw lock" alt="bicycle">
+											</div>
+										</li>
+										<li>
+											<BOUCLEcarac6(ARTICLES){id_article=29}>
+											<div class="about-right3 feater_right_item feater_item4 text-left">
+												<h3>#TITRE</h3>
+												<p>#TEXTE</p>
+											</div>
+										   </BOUCLEcarac6>
+										</li>
+
+									</ul>
+								</div>
+							
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+
+	</section>
+</BOUCLEordre_page3>
+	<!-- End of Feature part -->

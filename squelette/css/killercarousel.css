@@ -1,11 +1,16 @@
+/* 1.2 rev 1412181400 */
 
+/*
+    Main carousel wrapper.
+*/
 .kc-wrap {
-   
+    /* Various commands to stop items being selected when mouse-dragging/touching. */
     
     overflow:hidden;
     position:relative;
     background-position: center;
     width:100%;
+    /* This makes wrapper scale vertically in proportion to width */
     padding-top: 50%;
     margin-top: 20px;
 }
@@ -29,6 +34,13 @@
 }
 
 
+/*
+    Item Shadows are made from three sections, bottom, left and right.
+    This appears to give better performance than using CSS shadows, and minimizes the
+    pixel area of shadow drawn.
+    The image URLs used for the shadows will actually be copied into <img> elements.
+    You can of course change the images if required.
+*/
 
 .kc-shadow-bottom {
     position:absolute !important;
@@ -65,7 +77,10 @@
     }
 }
 
-
+/*
+    Reflection.
+    This is applied to an inserted <canvas> element that is the reflection.
+*/
 
 .kc-reflection {
     position:absolute;

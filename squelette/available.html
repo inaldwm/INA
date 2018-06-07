@@ -1,0 +1,73 @@
+<BOUCLEordre_page2(RUBRIQUES){id_rubrique}>
+<section id="Available">
+		<div class="col-sm-12 avail_border">
+			<img src="#CHEMIN{images/Available.png}" class="img-responsive" alt="">
+		</div>
+		<div class="container common">
+			<div class="header about_top">
+			
+			<BOUCLE_sous_rubrique2(RUBRIQUES){id_parent}{par titre}>
+				<h2>#TITRE</h2>
+				<h4>03</h4>
+			</BOUCLE_sous_rubrique2>
+			
+			</div>
+			<div class="row">
+			<BOUCLE_disponible(DOCUMENTS){id_rubrique}>
+				<div class="avail_inner">
+					<div class="col-md-4">
+						<div class="common_pera common_sub_header">
+							<ul>
+								<li style="margin-left: -7%;"><img class="img-responsive" src="#FICHIER" alt="img"></li>
+								<li>
+									<h4>#TITRE</h4>
+								</li>
+								<li>
+									<p>#DESCRIPTIF</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-md-4">
+						<div class="common_pera common_sub_header dextop">
+							<ul>
+								<li style="margin-left: -13%;"><img class="img-responsive" src="#CHEMIN{images/Icon-02.png}" alt="img"></li>
+								
+								<li>
+									<h4></h4>
+								</li>
+								
+								<li>
+									<p></p>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="common_pera common_sub_header tab">
+							<ul>
+								<li><img class="img-responsive" src="#CHEMIN{images/Icon-03.png}" alt="img"></li>
+								
+								<li>
+								      <h4></h4>
+								</li>
+								
+								<li>
+									<p></p>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					
+					-->
+					
+				</div>
+				</BOUCLE_disponible>
+			</div>
+		</div>
+	</section>
+</BOUCLEordre_page2>
+	<!-- end of Available part -->

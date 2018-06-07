@@ -1,0 +1,53 @@
+<BOUCLEordre_page1(RUBRIQUES){id_rubrique}>
+<section id="about_us">
+<div class="container common">
+      <div class="header about_top">
+	      <h2>#TITRE</h2>
+	      <h4>#INPUT_3</h4>			
+      </div>
+      <div class="row">
+	      <div class="col-md-7 col-xs-12">
+		<div class="about_img">
+		      <BOUCLEdoc(DOCUMENTS){id_rubrique}>		
+			<img class="img-responsive" src="#FICHIER" alt="img">
+		      </BOUCLEdoc>
+		</div>
+	      </div>
+	      <div class="col-md-5 col-xs-12">
+		      <div class="common_pera about_text">
+		      <div class="discription">
+			  <ul>
+			    <BOUCLEcontenu(ARTICLES){branche}>
+				   <li><i class="fa fa-hand-o-right"></i>#TITRE					    
+				      <p>#TEXTE</p>
+				   </li>
+			     </BOUCLEcontenu>
+			  </ul>
+		      </div>		      
+		      </div>		      
+		      <div class="clr"></div>
+	      </div>
+      </div>
+      <div class="row">
+	<div class="col-md-6 col-xs-12">
+	<div class="button-group store-buttons">
+	    <a href="#INPUT_1" class="btn btn-style-2  btn-color">
+		<i class="fa fa-android"></i>
+		<p class="dsp-tc"><span>#INPUT_2</span></p>
+	    </a>
+	</div>
+	</div>
+	<div class="col-md-6 col-xs-12">
+	    <div class="button-group store-buttons">
+	    <a href="#INPUT_1" class="btn btn-style-2  btn-color">
+		<i class="fa fa-apple"></i>
+		<p class="dsp-tc"><span>#INPUT_2</span></p>
+	    </a>
+	</div>
+	</div>
+      </div>
+
+</div>
+</section>
+</BOUCLEordre_page1>
+
